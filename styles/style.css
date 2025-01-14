@@ -1,4 +1,4 @@
-/* Reset default styles */
+/* defaults reset */
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +32,7 @@ ul {
     color: red;
 }
 
-/* Header (Navbar) */
+/* Header (main naavbar) */
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -284,7 +284,7 @@ ul {
     width: 100%;
 }
 
-/* Responsive Design */
+
 @media (max-width: 640px) {
     /* Mobile Version Start */
 

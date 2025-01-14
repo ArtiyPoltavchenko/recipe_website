@@ -219,7 +219,7 @@ function changeCategoryFilters(recipes) {
     categorySidebar.addEventListener('click', event => {
         if (event.target.tagName === 'A') {
             const selectedCategory = event.target.textContent;
-            currentCategory = selectedCategory === 'Any Category' ? null : selectedCategory; // null - All
+            currentCategory = selectedCategory === 'Any Category' ? null : selectedCategory; // null - All categories
             console.log("Category changed to: " + currentCategory);
             displayRecipes(recipes); // dispay filtrated
         }
