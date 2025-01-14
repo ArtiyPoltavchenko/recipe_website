@@ -1,6 +1,6 @@
 ---
 title: "Chicken Cheese Crepe"
-category: "Dough Products"
+category: "Starters"
 date_created: "2025-01-09"
 image: "sddefault.jpg"
 video: "https://www.youtube.com/watch?v=5KqFJlpGql0"
@@ -13,8 +13,8 @@ video: "https://www.youtube.com/watch?v=5KqFJlpGql0"
 - Vegetable oil ½ cup
 - Salt to taste
 - Soda on the tip of a knife
-- Cheese 100 г
-- Chicken fillet 400 г
+- Cheese 100 g
+- Chicken fillet 400 g
 - Onion 1 head
 - Butter 2 tablespoons
 

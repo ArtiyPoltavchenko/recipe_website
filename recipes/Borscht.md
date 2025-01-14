@@ -1,8 +1,8 @@
 ---
-title: "Red borscht with pork"
+title: "Red borscht"
 category: "Starters"
 date_created: "2025-01-09"
-image: "v2dfzz---c3x2x50px50p-up--05f47c576ac55d9a5a3ab2ed612e3f4f.jpg"
+image: "borscht.jpg"
 video: "https://www.youtube.com/watch?v=HwzDQp78kv0"
 ---
 ### Ingredients
