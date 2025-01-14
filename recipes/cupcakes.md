@@ -2,7 +2,7 @@
 title: "Brownie cupcakes"
 category: "Sweets"
 date_created: "2025-01-09"
-image: "DSC09353-884x1024.jpg"
+image: "dscf01119.jpg"
 video: "https://www.youtube.com/watch?v=_U78YYtIoSs"
 ---
 ### Ingredients
