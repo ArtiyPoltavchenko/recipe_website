@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Recipe</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="edit.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <a class="navbar-logo" href="../index.html">Easy Cooking</a>
+        <nav class="navbar-menu">
+            <ul>
+                <li><a class="navbar-link" href="../index.html">Home</a></li>
+                <li><a class="navbar-link" href="#">Categorys</a></li>
+                <li><a class="navbar-link" href="#">About us</a></li>
+                <li><a class="add-recipe-button" href="./pages/recipe_editing.html">Add recipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Edit Recipe Form -->
+    <main class="content-wrapper">
+        <div class="main-content">
+            <h1 class="text-center">Edit Recipe</h1>
+            <h2 class="text-center text-color-red"> (Under construction) </h2>
+            <form id="edit-recipe-form">
+                <label for="recipe-title">Title:</label>
+                <input type="text" id="recipe-title" name="title" required>
+
+                <label for="recipe-category">Category:</label>
+                <input type="text" id="recipe-category" name="category" required>
+
+                <label for="recipe-description">Description:</label>
+                <textarea id="recipe-description" name="description" rows="10" required></textarea>
+
+                <label for="recipe-image">Upload Image:</label>
+                <div id="image-drop-zone" class="drop-zone">
+                    <p>Drag and drop an image file here, or click to select a file.</p>
+                    <input type="file" id="recipe-image" name="image" accept="image/*">
+                </div>
+
+                <label for="recipe-video">Upload Video:</label>
+                <div id="video-drop-zone" class="drop-zone">
+                    <p>Drag and drop a video file here, or click to select a file.</p>
+                    <input type="file" id="recipe-video" name="video" accept="video/*">
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit">Save Recipe</button>
+                    <button type="button" id="cancel-button" onclick="window.location.href='../index.html';">Cancel</button>
+                </div>                
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">&copy; 2025 Easy Cooking</div>
+    </footer>
+</body>
+</html>

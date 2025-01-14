@@ -1,0 +1,363 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Simple modify classes */
+
+.text-center {
+    text-align: center;
+}
+
+.text-color-red {
+    color: red;
+}
+
+/* Header (Navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ff6347;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-inner {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-link {
+    background-color: #f1870d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar-link:hover{
+    background-color: #f0a856;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+}
+
+.add-recipe-button {
+    background-color: #fff;
+    color: #ff6347;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-recipe-button:hover {
+    background-color: #f1f1f1;
+}
+
+
+  
+
+/* Main Content Layout */
+.content-wrapper {
+    display: flex;
+    margin-top: 4rem;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center
+}
+
+.left-sidebar, .right-sidebar {
+    max-width: 300px;
+    min-width: 150px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: calc(100vh - 6rem);
+    position: sticky;
+    top: 4rem;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.left-sidebar a, .right-sidebar a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: color 0.1s ease, background-color 0.2s ease; 
+}
+
+.left-sidebar a:hover, .right-sidebar a:hover {
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+
+.left-sidebar h2, .right-sidebar h2 {
+    text-align: center;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0;
+}
+
+/* Recipe Article */
+.recipe {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0.2, 0, 0, 0.3);
+    padding: 15px;
+}
+
+.recipe h2, .recipe img {
+    text-align: center;
+}
+
+.recipe img { display: block;  
+    margin: 0 auto; 
+    max-width: 100%;
+    max-height: 400px; 
+    border-radius: 8px; 
+    margin-bottom: 1rem; }
+
+.recipe video {
+    max-width: 100%;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.recipe iframe {
+    height: 350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Page recipe_editing */
+#edit-recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#edit-recipe-form label {
+    font-weight: bold;
+}
+
+#edit-recipe-form input, #edit-recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#edit-recipe-form .drop-zone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background 0.3s;
+}
+
+#edit-recipe-form .drop-zone:hover {
+    background-color: #f0f0f0;
+}
+
+#edit-recipe-form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#edit-recipe-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#edit-recipe-form button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+}
+
+#edit-recipe-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#edit-recipe-form button#cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+#edit-recipe-form button#cancel-button:hover {
+    background-color: #e53935;
+}
+
+
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ff6347;
+    color: #fff;
+    margin-top: 1rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-inner {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    /* Mobile Version Start */
+
+body {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+h1, h2, h3 {
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+  
+.navbar {
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.navbar-logo {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.navbar-menu ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+
+.content-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.right-sidebar {
+    display: none;
+}
+
+.left-sidebar-mobile {
+    display: block;
+    z-index: 1001;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe {
+    padding: 1rem;
+}
+
+#edit-recipe-form {
+    padding: 1rem;
+}
+
+#edit-recipe-form input, 
+#edit-recipe-form textarea {
+    font-size: 1rem;
+}
+
+.footer {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+}

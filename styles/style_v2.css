@@ -1,0 +1,32 @@
+/* Dropdown List Categories */
+.dropdown {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 100;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown ul li {
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .dropdown ul li:hover {
+    background-color: #f0f0f0;
+  }
